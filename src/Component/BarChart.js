@@ -6,7 +6,7 @@ const BarChart = (props) => {
     
     const {stateData} = props;
     return(
-        <div className="container">
+        <div className="container-fluid">
             <Bar
             data={{
                 labels: ['Infected', 'Recovered', 'Deaths'],
