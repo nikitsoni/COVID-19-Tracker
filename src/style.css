@@ -26,6 +26,7 @@ body{
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
+    border-bottom: 5px solid cyan;
 }
 .input-group{
     display: flex;
@@ -73,6 +74,7 @@ p {
     height: 100px;
     text-align: center;
     padding: 30px;
+    margin-top: 40px;
 
 }
 .mytext{
@@ -110,6 +112,7 @@ p {
         align-items: center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 5px;
+        
     }
     h2{
         font-size: 15px;
@@ -122,5 +125,6 @@ p {
     }
     .footer{
         height: 30px;
+        margin-top: 40px;
     }
   }
