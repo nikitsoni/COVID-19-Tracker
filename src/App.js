@@ -20,7 +20,7 @@ function App({state}) {
   const getData = async () => {
     const response = await fetch("https://api.covid19india.org/data.json");
     const data = await response.json();
-    console.log(data)
+    //console.log(data)
     setStates(data.statewise)    
     setDailycase(data.cases_time_series)    
   }
@@ -38,3 +38,10 @@ function App({state}) {
 }
 
 export default App;
+
+//git init
+//git status
+//git add .
+//git commit -m ""
+//git push -u origin master
+//npm run deploy 

@@ -9,12 +9,12 @@ const BarChart = (props) => {
         <div className="container-fluid">
             <Bar
             data={{
-                labels: ['Infected', 'Recovered', 'Deaths'],
+                labels: ['Infected','Active','Recovered', 'Deaths'],
                 datasets: [
                 {
                     label: 'People',
-                    backgroundColor: ['rgba(0, 0, 255, 0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
-                    data: [stateData.confirmed, stateData.recovered, stateData.deaths],
+                    backgroundColor: ['rgba(0, 0, 255, 0.5)','rgba(251, 197, 49,0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
+                    data: [stateData.confirmed, stateData.active, stateData.recovered, stateData.deaths],
                 },
                 ],
             }}

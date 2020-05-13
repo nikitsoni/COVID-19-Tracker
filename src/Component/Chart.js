@@ -6,7 +6,7 @@ const Chart = (props) => {
 
     const {dailycase} = props;
 
-    console.log(dailycase)
+    //console.log(dailycase)
 
   //const [dailyData, setDailyData] = useState({});
 

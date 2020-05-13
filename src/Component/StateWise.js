@@ -16,7 +16,7 @@ function StateWise(props) {
     })
 
 
-    console.log(stateData)
+    //console.log(stateData)
 
 
 
