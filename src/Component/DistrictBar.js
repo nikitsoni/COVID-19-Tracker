@@ -2,9 +2,9 @@ import React from 'react';
 import { Bar } from 'react-chartjs-2';
 
 
-const BarChart = (props) => {
+const DistrictBar = (props) => {
     
-    const {stateData} = props;
+    const {districts} = props;
     
     return(
         <div className="container-fluid">
@@ -15,17 +15,17 @@ const BarChart = (props) => {
                 {
                     label: 'People',
                     backgroundColor: ['rgba(0, 0, 255, 0.5)','rgba(251, 197, 49,0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
-                    data: [stateData.confirmed, stateData.active, stateData.recovered, stateData.deaths],
+                    data: [districts.confirmed, districts.active, districts.recovered, districts.deceased],
                 },
                 ],
             }}
             options={{
                 legend: { display: false },
-                title: { display: true, text: `Current state in ${stateData.state}` },
+                title: { display: true, text: `Current state in ${districts.district}` },
             }}
             />
         </div>)
     
 };
 
-export default BarChart;
+export default DistrictBar;

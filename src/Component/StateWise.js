@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import BarChart from "./BarChart"
-
+import DistrictWise from './DistrictWise';
 
 function StateWise(props) {
     
@@ -15,8 +15,12 @@ function StateWise(props) {
         lastupdatedtime: ""
     })
 
+    
+
 
     //console.log(stateData)
+
+    
 
 
 
@@ -97,6 +101,7 @@ function StateWise(props) {
                 { stateData.active && (<div>
                     <div className="container">{displayData()}</div>
                     <BarChart stateData= {stateData}/>
+                    <DistrictWise stateData= {stateData}/>
                     </div>)
                 }
             </div>
