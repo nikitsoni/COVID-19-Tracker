@@ -65,7 +65,7 @@ p {
     font-weight:bolder;
 }
 .container{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -87,6 +87,7 @@ p {
     margin: 30px auto;
     background-color: cyan;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
 

@@ -7,7 +7,7 @@ const DistrictBar = (props) => {
     const {districts} = props;
     
     return(
-        <div className="container-fluid">
+        <div className="container">
             <Bar
             data={{
                 labels: ['Infected','Active','Recovered', 'Deaths'],

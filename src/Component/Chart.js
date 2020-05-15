@@ -40,7 +40,8 @@ const Chart = (props) => {
   );
 
   return (
-    <div className="container-fluid">
+    <div className="container">
+      
       {lineChart}
     </div>
   );

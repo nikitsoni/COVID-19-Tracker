@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Line} from 'react-chartjs-2'
 
 function DailyCase(props) {
 
@@ -62,6 +63,34 @@ function DailyCase(props) {
         )
     }
 
+    const lineChart = () =>  (
+        <Line
+          data={{
+            labels: dailycase.map(({date}) => date),
+            datasets: [{
+              data: dailycase.map((data) => data.dailyconfirmed),
+              label: 'Infected',
+              borderColor: '#3333ff',
+              fill: true,
+            }, {
+              data: dailycase.map((data) => data.dailydeceased),
+              label: 'Deaths',
+              borderColor: 'red',
+              backgroundColor: 'rgba(255, 0, 0, 0.5)',
+              fill: true,
+            },
+            {
+              data: dailycase.map((data) => data.dailyrecovered),
+              label: 'Recovered',
+              borderColor: 'green',
+              backgroundColor: 'rgba(255, 255, 0, 0.5)',
+              fill: true,
+            }
+            ],
+          }}
+        />
+    );
+
     return (
         <div className="container">
             <div className="input-group">
@@ -79,8 +108,11 @@ function DailyCase(props) {
             </div>
             {
                 dailyData.dailyconfirmed && (
+                    <div>
                     <div className="container">{displayData()}</div>
-    
+                    <div className="container">{lineChart()}</div>
+                    </div>
+
                 )
             }
             
